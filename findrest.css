@@ -1,0 +1,244 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#wrapper{
+  width: 100%;
+}
+
+body{
+	margin: 0 auto;
+}
+
+header{
+  position: relative;
+  left: 4%;
+	text-align: center;
+    margin: 0 auto
+}
+
+header>h1>a:link{
+    color: #973D3D;
+    font-size: 36px;
+    text-decoration: none;
+}
+
+header>h1>a:hover{
+    text-decoration: none;
+}
+
+header>h2{
+    color: #A23C3C;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*側拉式選單*/
+.glyphicon{
+
+  cursor:pointer;
+  font-size: 25px;
+  color: white;
+
+}
+#barContent{
+  display: none;
+  position: fixed;
+  color: white;
+  left: 8vw;
+  background-color: #F55353;
+  height: 100vh;
+  width: 60%;
+  z-index: 100;
+  padding: 2vw;
+  text-align:left;
+  letter-spacing: 10px;　
+}
+#barContent ul{
+  list-style-type: none;
+}
+
+.barContent_Title{
+  font-size: 28px;
+  border-bottom: 1px solid white;
+ margin-bottom: 15px;
+
+}
+
+#barContent .row1{
+  width: 100%;
+  height: 50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+
+#barContent .row2{
+  width: 100%;
+  height: 50%;
+  top: 50%
+  display:flex;
+      align-items:center;
+      justify-content:space-between;
+}
+#bar{
+  position: fixed;
+  left: 0px;
+  background-color: #F55353;
+  height: 100vh;
+  width: 115px;
+  z-index: 100;
+  padding: 2vw;
+  text-align:center;
+  letter-spacing: 10px;　
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: vertical-lr ;
+}
+#icon{
+  position: relative;
+  left: -5px;
+  width: 70px;
+  top:-30px;
+}
+#bar1{
+  font-size: 32px;
+  font-weight: 300;
+  color: white;
+  top:10vh;
+}
+#bar2{
+    font-weight: 100;
+color: white;
+}
+
+#bar2 a,#bar3 a{
+  text-decoration:none;
+}
+#bar2 a:link,#bar2 a:visited,#bar3 a:link,#bar3 a:visited{
+  color: white;
+}
+#bar3{
+    font-weight: 100;
+color: white;
+}
+
+/*國家餐廳nav*/
+
+nav{
+  box-sizing: border-box;
+    margin:0 auto;
+    padding-bottom: 30px;
+    padding-left:20vw;
+    padding-right:12vw;
+	  text-align: center;
+}
+
+nav>ul{
+    list-style: none;
+    padding-bottom:8px;
+    border-bottom: 1px solid #B40303;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>ul>li>a:link{
+    color: #973D3D;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+nav>ul>li>a:visited{
+    color: #973D3D;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+nav>ul>li>a:hover{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background-color: #F55353;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+
+/* 料理餐廳資訊 */
+
+article{
+  display: none;
+  position: relative;
+  margin-top: 86.5px;
+  left: 4%;
+}
+
+article>h3{
+    color: #B02F2F;
+    font-size: 16px;
+
+    text-align: center;
+    margin-bottom: 81px;
+}
+
+.left-box{
+float: left;
+ width:50%;
+}
+.left-box div{
+  float: right;
+  padding-right: 10%;
+}
+.left-box>.content{
+  width: 56%;
+}
+
+.left-box RestImage{
+  padding-left: 20%;
+}
+
+ul{
+  padding-left: 0px;
+}
+
+.right-box{
+  float: left;
+     width:50%;
+     margin-top: 155px;
+}
+
+.right-box div{
+  float: left ;
+  margin-left: 10%;
+}
+
+.right-box .RestImage{
+  padding-right: 20%;
+}
+
+
+
+.content h4{
+    color: #B02F0F;
+    font-size: 18px;
+
+}
+
+.RestImage>img{
+    width:332.8px;
+    height:442.4px;
+}
+
+.content{
+    border-left-color: #B40303;
+    border-left: solid 5px #F55353;
+}
+
+.content>ul>li{
+    color: black;
+    font-size: 14px;
+    list-style: none;
+}

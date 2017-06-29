@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>東南亞美食地圖</title>
+<link rel="stylesheet" href="main_css.css">
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+
+</head>
+<body>
+
+<div class="container-fliud" id="wrapper">
+
+  <!-- 導覽列 -->
+  <div id="bar">
+  <span  style="top:-50px" class="glyphicon  glyphicon-align-justify" onclick="barShow()"></span>
+    <a href="index.html"><img id="icon" src="img/icon.png"></a>
+
+    <span id="bar1">
+      La Harrison
+    </span>
+      <span id="bar2">
+    <a href="findrest.html">找餐廳</a>
+    </span >
+      <span id="bar3">
+    <a href="http://sasuka9985.pixnet.net/blog/post/216062894">  美食網誌 </a>
+      </span>
+  </div>
+
+    <nav id="barContent">
+
+      <div class="row1">
+        <div class="col-lg-12">
+          <ul>
+            <div class="barContent_Title">探索國家</div>
+            <li><a href="intro_phili.html">菲律賓</a></li>
+            <li><a href="intro_singa.html">新馬地區</a></li>
+            <li><a href="intro_combodia.html">柬埔寨</a></li>
+            <li><a href="intro_vietnam.html">越南</a></li>
+            <li><a href="intro_thai.html">泰國</a></li>
+            <li><a href="intro_laos.html">寮國</a></li>
+            <li><a href="intro_indo.html">印尼</a></li>
+            <li><a href="intro_myanmar.html">緬甸</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-12">
+          <ul>
+            <div class="barContent_Title">找餐廳</div>
+            <li><a href="findRest.html">菲律賓</a></li>
+            <li><a href="findRest.html">新馬地區</a></li>
+            <li><a href="findRest.html">柬埔寨</a></li>
+            <li><a href="findRest.html">越南</a></li>
+            <li><a href="findRest.html">泰國</a></li>
+            <li><a href="findRest.html">寮國</a></li>
+            <li><a href="findRest.html">印尼</a></li>
+            <li><a href="findRest.html">緬甸</a></li>
+          </ul>
+        </div>
+      </div>
+      </ul>
+      <div class="row2">
+        <ul>
+          <div class="col-lg-12">
+            <div class="barContent_Title">特色料理</div>
+          </div>
+          <div class="col-lg-4">
+            <li>菲律賓</li>
+            <li>新馬地區</li>
+            <li>柬埔寨</li>
+            <li>越南</li>
+            <li>泰國</li>
+            <li>寮國</li>
+            <li>印尼</li>
+            <li>緬甸</li>
+          </div>
+          <div class="col-lg-4">
+            <li><a href="feature_phili1.html">菲律賓燒乳豬</a></li>
+            <li><a href="feature_singa1.html">叻沙</a></li>
+            <li><a href="feature_cambodia1.html">AMOK</a></li>
+            <li><a href="feature_vitenam1.html">甘蔗蝦</a></li>
+            <li><a href="feature_thai1.html">冬蔭功</a></li>
+            <li><a href="feature_laos1.html">辣普</a></li>
+            <li><a href="feature_indo1.html">沙嗲</a></li>
+            <li><a href="feature_myanmar1.html">發酵茶葉沙拉</a></li>
+          </div>
+          <div class="col-lg-4">
+            <li><a href="feature_phili2.html">halo-halo</a></li>
+            <li><a href="feature_singa2.html">海南雞飯</a></li>
+            <li><a href="feature_cambodia2.html">聖羅勒紅樹螞蟻牛肉</a></li>
+            <li><a href="feature_vitenam2.html">越式春捲</a></li>
+            <li><a href="feature_thai2.html">泰式炒河粉</a></li>
+            <li><a href="feature_laos2.html">椰奶糯米糕</a></li>
+            <li><a href="feature_indo2.html">巴東牛肉</a></li>
+            <li><a href="feature_myanmar2.html">緬甸咖哩飯</a></li>
+          </div>
+        </ul>
+      </div>
+
+    </nav>
+
+
+<div id="intro_eat">
+  <div class="row">
+    <div class="col-lg-5">
+<!-- 圖片一 -->
+      <img id="mainpic" src="飲食習慣/柬埔寨1.jpg">
+    </div>
+    <div class="col-lg-7">
+
+    <!-- 右上小標題 -->
+      <div style="margin-top:10vh;float:right;overflow:hidden;">Cambodia</div>
+      <div style="width:12vw;height:1px;margin-top:12vh;right:54px;float:right;background-color:#F55353;overflow:hidden;"></div>
+
+
+    <!-- 文字1 -->
+      <div id="intro_title">
+      <p style="font-size:50px;margin:0">吃出柬埔寨</p>
+      <p style="font-size:30px;margin:0">探索精彩多元文化</p>
+      <div style="width:300px;height:1px;background-color:#F55353;overflow:hidden;"></div>
+      </div>
+      <!-- 文字2 -->
+      <p id="intro_contex">
+        柬埔寨位於中南半島，北界寮國，西北與泰國接壤，東南與越南接鄰，加上印度人、馬來人、越南人、中國人的陸續遷入，與法國長達90年的統治，不只是種族多樣，飲食也呈現多元的面貌。柬埔寨擁有特別的高棉菜，口味較偏濃及較辛辣，該國出產胡椒、魚露。用上大量香料、辣椒、胡椒和魚露等烹調，口味與泰菜接近。由於受到法國殖民統治，所以菜餚有混入了法國的元素，也受到中國和越南等地的的口味影響。
+ </p>
+      <p style="float:right;margin-right:7vw;-webkit-writing-mode: vertical-lr;
+      writing-mode: vertical-lr ">Slide</p>
+      <div style="
+      width:1px;
+      height:11vh;
+
+      background-color:#F55353;
+      float:right;
+      overflow:hidden;"></div>
+
+    </div>
+  </div>
+  <div style="height:100vh"class="row">
+    <div class="row">
+      <div class="col-lg-4">
+        <div id="leftline"></div>
+        </div>
+      <div class="col-lg-4">
+  <!-- 文字3 -->
+        <p id="food_intro">與泰菜接近，又融合了越南與法國特色</p>
+        </div>
+      <div class="col-lg-4">
+        <div id="rightline"></div>
+        </div>
+    </div>
+  <div class="row">
+    <div style="padding-right:0px" class="col-lg-6">
+<!-- 圖片2 -->
+        <a href="feature_cambodia1.html"> <img id="mainfoodpic" class="mySlides" src="飲食習慣/柬埔寨2.jpg"></a>
+        <a href="feature_cambodia1.html"><img id="mainfoodpic" class="mySlides" src="飲食習慣/柬埔寨3.jpg"></a>
+        <a href="feature_cambodia2.html"><img id="mainfoodpic" class="mySlides" src="飲食習慣/柬埔寨4.jpg"></a>
+        <a href="feature_cambodia2.html"><img id="mainfoodpic" class="mySlides" src="飲食習慣/柬埔寨5.jpg"></a>
+
+
+    </div>
+    <div  style="padding-left:0px" class="col-lg-6">
+      <div style="padding-left:0px"class="col-lg-4">
+      <p id="introtxt">探索特色美食</p>
+      </div>
+      <div class="col-lg-8">
+        <!-- 側邊直線 -->
+        <p style="float:right;margin-right:7vw;-webkit-writing-mode: vertical-lr;
+        writing-mode: vertical-lr ">Top</p>
+        <div style="
+        width:1px;
+        height:11vh;
+
+        background-color:#F55353;
+        float:right;
+        overflow:hidden;"></div>
+        <!-- 側邊直線 -->
+
+<!-- 文字4 -->
+      <p id="foodname">Amok</p>
+      </div>
+
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-lg-6">
+    <div style="height:25vh;width:12vw;"></div>
+    </div>
+      <div class="col-lg-6">
+         <div id="p"><p id="txt567">Amok</p><p id="txt567">Amok</p><p id="txt567">聖羅勒紅樹螞蟻牛肉</p><p id="txt567">聖羅勒紅樹螞蟻牛肉</p></div>
+        <div id="pic">
+          <img id="otherpic"class="demo w3-opacity w3-hover-opacity-off otherpic" onclick="currentDiv(1);changeName('Amok');" src="飲食習慣/柬埔寨2.jpg">
+        <!-- 圖片三 -->
+        <!-- <p id="txt567">冬蔭功</p> -->
+        <img id="otherpic"class="demo w3-opacity w3-hover-opacity-off otherpic" onclick="currentDiv(2);changeName('Amok');" src="飲食習慣/柬埔寨3.jpg">
+        <!-- 圖片四 -->
+        <!-- <p id="txt567">泰式炒河粉</p> -->
+          <img id="otherpic"class="demo w3-opacity w3-hover-opacity-off otherpic" onclick="currentDiv(3);changeName('聖羅勒紅樹螞蟻牛肉');" src="飲食習慣/柬埔寨4.jpg">
+        <!-- 圖片五 -->
+        <!-- <p id="txt567">泰式炒河粉</p> -->
+          <img id="otherpic"class="demo w3-opacity w3-hover-opacity-off otherpic" onclick="currentDiv(4);changeName('聖羅勒紅樹螞蟻牛肉');" src="飲食習慣/柬埔寨5.jpg">
+        </div>
+        </div>
+  </div>
+
+  </div>
+
+  <div id="question" style="height:100vh" class="row">
+        <div class="row">
+          <div class="col-lg-4">
+            <div id="leftline"></div>
+          </div>
+          <div class="col-lg-4">
+            <p id="food_intro">關於柬埔寨，你不可不知的冷知識！</p>
+          </div>
+          <div class="col-lg-4">
+            <div id="rightline"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+          </div>
+          <div id="cold" class="col-lg-6 flex-container">
+            <div id="que">
+              <h3></h3>
+            </div>
+            <div id="option">
+              <button id="A" onclick="checkAns('Cambodia','a')" type="button" class="btn btn-default">A</button>
+              <button id="B" onclick="checkAns('Cambodia','b')" type="button" class="btn btn-default">B</button>
+              <button id="C" onclick="checkAns('Cambodia','c')" type="button" class="btn btn-default">C</button>
+              <button id="D" onclick="checkAns('Cambodia','d')" type="button" class="btn btn-default">D</button>
+            </div>
+            <div id="wrong">
+              <h1>錯！</h1>
+            </div>
+            <div id="content">
+              <h1>對！</h1>
+              <p></p>
+            </div>
+            <div id="next">
+              <button onclick="next('Cambodia')" type="button" class="btn btn-default">下一題</button>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+          </div>
+        </div>
+      </div>
+  </div>
+
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="js/introPage.js"></script>
+<script>
+    getQ("Cambodia", 1);
+  </script>
+
+</body>
+
+
+
+
+
+
+</html>

@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>東南亞美食地圖</title>
+<link rel="stylesheet" href="main_css.css">
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container-fliud" id="wrapper">
+
+  <!-- 導覽列 -->
+  <!-- 導覽列 -->
+  <div id="bar">
+<span  style="top:-50px" class="glyphicon  glyphicon-align-justify" onclick="barShow()"></span>
+    <a href="index.html"><img id="icon" src="img/icon.png"></a>
+
+    <span id="bar1">
+      La Harrison
+    </span>
+      <span id="bar2">
+    <a href="findrest.html">找餐廳</a>
+    </span >
+      <span id="bar3">
+    <a href="http://sasuka9985.pixnet.net/blog/post/216062894">  美食網誌 </a>
+      </span>
+  </div>
+
+    <nav id="barContent">
+
+      <div class="row1">
+        <div class="col-lg-12">
+          <ul>
+            <div class="barContent_Title">探索國家</div>
+            <li><a href="intro_phili.html">菲律賓</a></li>
+            <li><a href="intro_singa.html">新馬地區</a></li>
+            <li><a href="intro_combodia.html">柬埔寨</a></li>
+            <li><a href="intro_vietnam.html">越南</a></li>
+            <li><a href="intro_thai.html">泰國</a></li>
+            <li><a href="intro_laos.html">寮國</a></li>
+            <li><a href="intro_indo.html">印尼</a></li>
+            <li><a href="intro_myanmar.html">緬甸</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-12">
+          <ul>
+            <div class="barContent_Title">找餐廳</div>
+            <li><a href="findRest.html">菲律賓</a></li>
+            <li><a href="findRest.html">新馬地區</a></li>
+            <li><a href="findRest.html">柬埔寨</a></li>
+            <li><a href="findRest.html">越南</a></li>
+            <li><a href="findRest.html">泰國</a></li>
+            <li><a href="findRest.html">寮國</a></li>
+            <li><a href="findRest.html">印尼</a></li>
+            <li><a href="findRest.html">緬甸</a></li>
+          </ul>
+        </div>
+      </div>
+      </ul>
+      <div class="row2">
+        <ul>
+          <div class="col-lg-12">
+            <div class="barContent_Title">特色料理</div>
+          </div>
+          <div class="col-lg-4">
+            <li>菲律賓</li>
+            <li>新馬地區</li>
+            <li>柬埔寨</li>
+            <li>越南</li>
+            <li>泰國</li>
+            <li>寮國</li>
+            <li>印尼</li>
+            <li>緬甸</li>
+          </div>
+          <div class="col-lg-4">
+            <li><a href="feature_phili1.html">菲律賓燒乳豬</a></li>
+            <li><a href="feature_singa1.html">叻沙</a></li>
+            <li><a href="feature_cambodia1.html">AMOK</a></li>
+            <li><a href="feature_vitenam1.html">甘蔗蝦</a></li>
+            <li><a href="feature_thai1.html">冬蔭功</a></li>
+            <li><a href="feature_laos1.html">辣普</a></li>
+            <li><a href="feature_indo1.html">沙嗲</a></li>
+            <li><a href="feature_myanmar1.html">發酵茶葉沙拉</a></li>
+          </div>
+          <div class="col-lg-4">
+            <li><a href="feature_phili2.html">halo-halo</a></li>
+            <li><a href="feature_singa2.html">海南雞飯</a></li>
+            <li><a href="feature_cambodia2.html">聖羅勒紅樹螞蟻牛肉</a></li>
+            <li><a href="feature_vitenam2.html">越式春捲</a></li>
+            <li><a href="feature_thai2.html">泰式炒河粉</a></li>
+            <li><a href="feature_laos2.html">椰奶糯米糕</a></li>
+            <li><a href="feature_indo2.html">巴東牛肉</a></li>
+            <li><a href="feature_myanmar2.html">緬甸咖哩飯</a></li>
+          </div>
+        </ul>
+      </div>
+
+    </nav>
+
+
+<div id="intro_eat">
+  <div style="height:100vh">
+  <div class="row">
+    <div class="col-lg-4">
+      <div id="leftline"></div>
+      </div>
+    <div class="col-lg-4">
+
+      <!-- 食物名稱 -->
+      <p style="font-size:25px" id="food_intro">叻沙 Laksa </p>
+      </div>
+    <div class="col-lg-4">
+      <div id="rightline"></div>
+      </div>
+  </div>
+  <div id="centerpic">
+
+    <!-- 食物圖片 -->
+  <img id="featfood"src="特色食物/叻沙.jpeg">
+  </div>
+
+   <!-- 食材介紹 -->
+      <div id="featintro">
+        <div style="
+        width:50vw;
+        margin-top:3vh;
+        font-size:15px;
+        ">
+咖哩叻沙
+是由馬來人、華人、娘惹等不同文化混合的美食，不同族群和地方的咖哩叻沙都會有不同，但是基本的原料是相同的，最大的特色是使用加了椰奶的咖哩湯頭，味道較為濃郁。一般在中馬、南馬、新加坡及國外地區所稱呼的叻沙多指咖哩叻沙,在北馬及中馬一帶多稱為咖哩麵。咖哩叻沙的配料多使用雞肉絲、豆芽、血蚶、蝦子、雞蛋等，在華人社區的咖哩叻沙會加入豬血、豬皮、燒肉、叉燒等。
+亞參叻沙
+「Asam」在馬來文中意味「酸」，因此相較於咖哩叻沙，亞參叻沙的味道較酸也較辣。湯底主要是由淡水魚所熬製，多以甘榜魚為主，在熬製的過程中加上薑花、南薑、香茅、紅蔥頭、辣椒、叻沙葉、蝦醬、羅望子（亞參果）等，其中羅望子和亞參果片是酸味的主要來源。待湯底熬製出味道後，將鍋裡的甘榜魚撈起，去其骨與頭尾，將魚肉撕成碎細狀，再倒入湯內繼續熬煮。接下來將瀨粉燙熟，放置在碗內，再加上已切成絲或碎片的鳳梨、黃瓜、洋蔥、萵苣、薑花、辣椒等材料，再淋上熬好的湯底，享用時，倒入一湯匙的蝦膏進行攪拌。蝦膏帶有甜味，倒入越多的蝦膏，甜味就越明顯。
+
+
+      <br>
+      <br>
+      <br>
+      <p style="text-align:center;color:#F55353;font-weight:100;">探索美食背後有哪些特別食材</p>
+      </div>
+    </div>
+    <!-- 側邊直線 -->
+    <p style="float:right;margin-right:7vw;-webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr ">Slide</p>
+    <div style="
+    width:1px;
+    height:11vh;
+    background-color:#F55353;
+    float:right;
+    overflow:hidden;"></div>
+    <!-- 側邊直線 -->
+ </div>
+   <div style="height:100vh">
+     <div class="row">
+
+       </div>
+ 
+       <!-- 食材介紹 -->
+       <div class="element">
+          <div  style="
+          position:relative;
+          top:-60px;
+          font-size:30px;
+          border-left: solid 8px #F55353;
+          text-align:center;
+          ">
+
+          椰漿</div>
+          <div class="line"></div>
+          <p style="
+          width:450px;
+          position:relative;
+          ">又稱椰奶，從成熟的椰子的椰肉中榨出來的奶白色液體，是一種植物奶，而區別於椰子中原有的半透明香甜味液體。其顏色與濃郁的味道緣於它的高油量與高糖份。椰漿是東南亞與南亞國家重要的食品調味料。
+
+</p>
+          <img id="elementpic"src="特色食物/椰子.jpg">
+
+       </div>
+       <!-- 食材介紹 -->
+       <!-- 食材介紹 -->
+       <div class="element">
+          <div  style="
+          position:relative;
+          top:-60px;
+          font-size:30px;
+          border-left: solid 8px #F55353;
+          text-align:center;
+          ">
+
+          羅望子</div>
+          <div class="line"></div>
+          <p style="
+          width:450px;
+          position:relative;
+          ">又稱酸豆。果肉可以食用而且非常受喜愛，在亞洲和拉丁美洲的烹飪中用作調味料，同時也是喼汁和HP醬中的重要成分。酸豆未成熟果實的果肉又酸又澀，通常用在開胃菜餚中。成熟的果實要甜一些，可用於甜點、飲料和小吃。
+
+</p>
+          <img id="elementpic"src="特色食物/酸子.jpg">
+
+       </div>
+       <!-- 食材介紹 -->
+       <!-- 食材介紹 -->
+       <div class="element">
+          <div  style="
+          position:relative;
+          top:-60px;
+          font-size:30px;
+          border-left: solid 8px #F55353;
+          text-align:center;
+          ">
+
+          香茅</div>
+          <div class="line"></div>
+          <p style="
+          width:450px;
+          position:relative;
+          ">香茅是禾本科香茅屬約55種芳香性植物的統稱，亦稱為香茅草，因有檸檬香氣，故又被稱為檸檬草。在搗碎或烹飪時有淡淡的檸檬味及特殊香氣，並且在東南亞國家被當做烹飪香料使用。
+
+</p>
+          <img id="elementpic"src="特色食物/香茅.jpg">
+
+       </div>
+       <!-- 食材介紹 -->
+       <!-- 食材介紹 -->
+       <div class="element">
+          <div  style="
+          position:relative;
+          top:-60px;
+          font-size:30px;
+          border-left: solid 8px #F55353;
+          text-align:center;
+          ">
+
+          南薑</div>
+          <div class="line"></div>
+          <p style="
+          width:450px;
+          position:relative;
+          ">南薑性溫、辛，具有針對鼻子過敏、暖胃、改善腸胃脹氣與手腳冰冷的功效，在中國的本草綱目紀載：南薑以三年為高級品。而南薑常用於泰國菜、咖哩上，是烹調上很棒的去腥佐料，也是在台灣製作沙茶醬的原料。
+</p>
+          <img id="elementpic"src="特色食物/南薑.jpg">
+
+       </div>
+       <!-- 食材介紹 -->
+       <!-- 食材介紹 -->
+       <div class="element">
+          <div  style="
+          position:relative;
+          top:-60px;
+          font-size:30px;
+          border-left: solid 8px #F55353;
+          text-align:center;
+          ">
+
+          辣椒</div>
+          <div class="line"></div>
+          <p style="
+          width:450px;
+          position:relative;
+          ">東南亞料理的重要香料之一，唐朝藥王孫思邈的《千金要方》中提到「辛主發散、苦主沉降」，意思是辛辣有助於體內熱氣消散，苦味則不適合夏天吃。東南亞不論是春夏秋冬都愛吃辣抗暑，。
+</p>
+          <img id="elementpic"src="特色食物/辣椒.jpg">
+
+       </div>
+       <!-- 食材介紹 -->
+       <!-- 食材介紹 -->
+       <div class="element">
+          <div  style="
+          position:relative;
+          top:-60px;
+          font-size:30px;
+          border-left: solid 8px #F55353;
+          text-align:center;
+          ">
+
+          蝦醬</div>
+          <div class="line"></div>
+          <p style="
+          width:450px;
+          position:relative;
+          ">蝦膏是以小蝦加入鹽巴，發酵磨成粘稠狀後，在陽光下暴曬，把水分蒸發而成膏狀，就成為蝦膏。
+蝦醬是以蝦膏為主要原料，使用前須先將蝦膏以乾鍋煨香，再佐以其它配料，如蔥頭、蒜頭、魚露等煮成醬，這樣才稱做蝦醬。
+常見的蝦膏會呈紫紅色，蝦醬的顏色則呈現深黯咖啡色，兩者味道大不同，蝦膏氣味濃烈，而蝦醬因經過二次加工及調味，通常就可以直接炒食使用。坊間已有業者將蝦膏加上副料製作出方便醬式的調味蝦醬，以方便消費者直接使用，例如蝦醬炒飯、蝦醬空心菜等。
+</p>
+          <img id="elementpic"src="特色食物/蝦醬.jpg">
+
+       </div>
+       <!-- 食材介紹 -->
+       
+
+           <div  class="row">
+              <a href="findrest.html"><p  class="finaltxt"style="margin-top:10vh;text-align:center;color:#F55353;font-weight:100;">探索在台灣的東南亞料理餐廳</p>
+              <!-- <div class="restruant">
+                <div class="row">
+                <div class="col-lg-3">
+                <div class="restintro">
+           <img  class="restpic" src="feat/resttest.jpg">
+               <div style="padding:10px;padding-top:0px;margin-top:13px;border-left:solid 8px #F55353">
+                 <strong>泰街頭</strong><br>
+                 地址：  台北市大安區溫州街74巷6號1樓
+                <br> 電話： 02 2367 6997
+                <br> 營業時間：<br>週一 ~ 週五　11:30~15:00  17:00-20:00
+                 <br> 週六 ~ 週日  11:30~22:00
+               </div>
+               </div>
+               </div>
+              <div class="col-lg-3">
+               <div class="restintro">
+          <img  class="restpic" src="feat/resttest.jpg">
+                <div style="padding:10px;padding-top:0px;margin-top:13px;border-left:solid 8px #F55353">
+                  <strong>泰街頭</strong><br>
+                  地址：  台北市大安區溫州街74巷6號1樓
+                 <br> 電話： 02 2367 6997
+                 <br> 營業時間：<br>週一 ~ 週五　11:30~15:00  17:00-20:00
+                  <br> 週六 ~ 週日  11:30~22:00
+                </div>
+              </div>
+              </div>
+            <div class="col-lg-3">
+              <div class="restintro">
+         <img  class="restpic" src="feat/resttest.jpg">
+               <div style="padding:10px;padding-top:0px;margin-top:13px;border-left:solid 8px #F55353">
+                 <strong>泰街頭</strong><br>
+                 地址：  台北市大安區溫州街74巷6號1樓
+                <br> 電話： 02 2367 6997
+                <br> 營業時間：<br>週一 ~ 週五　11:30~15:00  17:00-20:00
+                 <br> 週六 ~ 週日  11:30~22:00
+               </div>
+             </div>
+             </div>
+          <div class="col-lg-3">
+             <div class="restintro">
+        <img  class="restpic" src="feat/resttest.jpg">
+              <div style="padding:10px;padding-top:0px;margin-top:13px;border-left:solid 8px #F55353">
+                 <strong>泰街頭</strong><br>
+                 地址：  台北市大安區溫州街74巷6號1樓
+                <br> 電話： 02 2367 6997
+                <br> 營業時間：<br>週一 ~ 週五　11:30~15:00  17:00-20:00
+                 <br> 週六 ~ 週日  11:30~22:00
+              </div>
+            </div>
+            </div>
+
+
+
+           </div>
+         </div> -->
+
+      </div>
+
+
+     </div>
+
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="js/feature.js"></script>
+
+</body>
+
+
+
+
+
+
+</html>

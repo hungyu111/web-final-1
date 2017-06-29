@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>東南亞美食地圖</title>
+<link rel="stylesheet" href="main_css.css">
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+
+</head>
+<body>
+
+<div class="container-fliud" id="wrapper">
+
+  <!-- 導覽列 -->
+  <div id="bar">
+<span  style="top:-50px" class="glyphicon  glyphicon-align-justify" onclick="barShow()"></span>
+    <a href="index.html"><img id="icon" src="img/icon.png"></a>
+
+    <span id="bar1">
+      La Harrison
+    </span>
+      <span id="bar2">
+    <a href="findrest.html">找餐廳</a>
+    </span >
+      <span id="bar3">
+    <a href="http://sasuka9985.pixnet.net/blog/post/216062894">  美食網誌 </a>
+      </span>
+  </div>
+
+    <nav id="barContent">
+
+      <div class="row1">
+        <div class="col-lg-12">
+          <ul>
+            <div class="barContent_Title">探索國家</div>
+            <li><a href="intro_phili.html">菲律賓</a></li>
+            <li><a href="intro_singa.html">新馬地區</a></li>
+            <li><a href="intro_combodia.html">柬埔寨</a></li>
+            <li><a href="intro_vietnam.html">越南</a></li>
+            <li><a href="intro_thai.html">泰國</a></li>
+            <li><a href="intro_laos.html">寮國</a></li>
+            <li><a href="intro_indo.html">印尼</a></li>
+            <li><a href="intro_myanmar.html">緬甸</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-12">
+          <ul>
+            <div class="barContent_Title">找餐廳</div>
+            <li><a href="findRest.html">菲律賓</a></li>
+            <li><a href="findRest.html">新馬地區</a></li>
+            <li><a href="findRest.html">柬埔寨</a></li>
+            <li><a href="findRest.html">越南</a></li>
+            <li><a href="findRest.html">泰國</a></li>
+            <li><a href="findRest.html">寮國</a></li>
+            <li><a href="findRest.html">印尼</a></li>
+            <li><a href="findRest.html">緬甸</a></li>
+          </ul>
+        </div>
+      </div>
+      </ul>
+      <div class="row2">
+        <ul>
+          <div class="col-lg-12">
+            <div class="barContent_Title">特色料理</div>
+          </div>
+          <div class="col-lg-4">
+            <li>菲律賓</li>
+            <li>新馬地區</li>
+            <li>柬埔寨</li>
+            <li>越南</li>
+            <li>泰國</li>
+            <li>寮國</li>
+            <li>印尼</li>
+            <li>緬甸</li>
+          </div>
+          <div class="col-lg-4">
+            <li><a href="feature_phili1.html">菲律賓燒乳豬</a></li>
+            <li><a href="feature_singa1.html">叻沙</a></li>
+            <li><a href="feature_cambodia1.html">AMOK</a></li>
+            <li><a href="feature_vitenam1.html">甘蔗蝦</a></li>
+            <li><a href="feature_thai1.html">冬蔭功</a></li>
+            <li><a href="feature_laos1.html">辣普</a></li>
+            <li><a href="feature_indo1.html">沙嗲</a></li>
+            <li><a href="feature_myanmar1.html">發酵茶葉沙拉</a></li>
+          </div>
+          <div class="col-lg-4">
+            <li><a href="feature_phili2.html">halo-halo</a></li>
+            <li><a href="feature_singa2.html">海南雞飯</a></li>
+            <li><a href="feature_cambodia2.html">聖羅勒紅樹螞蟻牛肉</a></li>
+            <li><a href="feature_vitenam2.html">越式春捲</a></li>
+            <li><a href="feature_thai2.html">泰式炒河粉</a></li>
+            <li><a href="feature_laos2.html">椰奶糯米糕</a></li>
+            <li><a href="feature_indo2.html">巴東牛肉</a></li>
+            <li><a href="feature_myanmar2.html">緬甸咖哩飯</a></li>
+          </div>
+        </ul>
+      </div>
+
+    </nav>
+
+
+<div id="intro_eat">
+  <div class="row">
+    <div class="col-lg-5">
+<!-- 圖片一 -->
+      <img id="mainpic" src="飲食習慣/印尼1.jpg">
+    </div>
+    <div class="col-lg-7">
+
+    <!-- 右上小標題 -->
+      <div style="margin-top:10vh;float:right;overflow:hidden;">Indonesia</div>
+      <div style="width:12vw;height:1px;margin-top:12vh;right:54px;float:right;background-color:#F55353;overflow:hidden;"></div>
+
+
+    <!-- 文字1 -->
+      <div id="intro_title">
+      <p style="font-size:60px;margin:0">吃出印尼</p>
+      <p style="font-size:30px;margin:0">探索精彩多元文化</p>
+      <div style="width:300px;height:1px;background-color:#F55353;overflow:hidden;"></div>
+      </div>
+      <!-- 文字2 -->
+      <p style="font-size:15px"id="intro_contex">
+印尼地處熱帶、不產小麥，所以居民的主食是大米、玉米或薯類，尤其是大米更為普遍。大米除煮飯外，印尼人喜歡用香蕉葉或棕櫚葉把大米或糯米，包成菱形蒸熟而吃，稱為「克杜巴」。不過，印尼人也喜歡吃麵食、如吃各種麵條、麵包等。由於印尼人絕大部分信仰伊斯蘭教，所以絕大部分居民不吃豬肉，而是吃牛羊肉和魚蝦之類。印尼是一個盛產香料的國家，印尼製作菜餚喜歡放各種香料，以及辣椒、蔥、姜、蒜等。因此印尼的特點，一般是辛辣味香。印尼人喜歡吃「沙爹」、「登登」、「咖喱」等。「沙爹」是牛羊肉串，製作方式講究，先把鮮嫩的牛羊肉切成小塊，然後浸泡在香料等的調料里，再用細竹條串起來，用碳火烤，邊烤邊用調料汁在串肉上撒滴，使串肉散發出陣陣的香味，烤熟後蘸辣椒花生醬一起吃，味道鮮美可口。「登登」是牛肉乾，製作方式也很考究，先把鮮嫩的牛肉切成薄片，再塗上伴有香料的醬油、略放些糖，然後曬乾。吃的時候，用油炸，味道也很美。印尼盛產魚蝦，吃魚蝦也很講究。除了煎、炸之外，有的魚開膛後，在魚肚裡塗上香料和辣醬，然後烤熟吃。吃蝦時，把活蝦放在玻璃鍋內，倒上酒精、點上火，蓋鍋蓋，片刻便把活蝦煮熟，然後蘸辣醬吃。
+ </p>
+      <p style="float:right;margin-right:7vw;-webkit-writing-mode: vertical-lr;
+      writing-mode: vertical-lr ">Slide</p>
+      <div style="
+      width:1px;
+      height:11vh;
+
+      background-color:#F55353;
+      float:right;
+      overflow:hidden;"></div>
+
+    </div>
+  </div>
+  <div style="height:100vh"class="row">
+    <div class="row">
+      <div class="col-lg-4">
+        <div id="leftline"></div>
+        </div>
+      <div class="col-lg-4">
+  <!-- 文字3 -->
+        <p id="food_intro">印尼菜辛辣味香，製作相當講究</p>
+        </div>
+      <div class="col-lg-4">
+        <div id="rightline"></div>
+        </div>
+    </div>
+  <div class="row">
+    <div style="padding-right:0px" class="col-lg-6">
+<!-- 圖片2 -->
+        <a href="feature_indo1.html"> <img id="mainfoodpic" class="mySlides" src="飲食習慣/印尼2.jpg"></a>
+        <a href="feature_indo1.html"><img id="mainfoodpic" class="mySlides" src="飲食習慣/印尼3.jpg"></a>
+        <a href="feature_indo2.html"><img id="mainfoodpic" class="mySlides" src="飲食習慣/印尼4.jpg"></a>
+        <a href="feature_indo2.html"><img id="mainfoodpic" class="mySlides" src="飲食習慣/印尼5.jpg"></a>
+
+    </div>
+    <div  style="padding-left:0px" class="col-lg-6">
+      <div style="padding-left:0px"class="col-lg-4">
+      <p id="introtxt">探索特色美食</p>
+      </div>
+      <div class="col-lg-8">
+        <!-- 側邊直線 -->
+        <p style="float:right;margin-right:7vw;-webkit-writing-mode: vertical-lr;
+        writing-mode: vertical-lr ">Top</p>
+        <div style="
+        width:1px;
+        height:11vh;
+
+        background-color:#F55353;
+        float:right;
+        overflow:hidden;"></div>
+        <!-- 側邊直線 -->
+
+<!-- 文字4 -->
+      <p id="foodname">沙嗲</p>
+      </div>
+
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-lg-6">
+    <div style="height:25vh;width:12vw;"></div>
+    </div>
+      <div class="col-lg-6">
+        <div id="p"><p id="txt567">沙嗲</p><p id="txt567">沙嗲</p><p id="txt567">巴東牛肉</p><p id="txt567">巴東牛肉」</p></div>
+        <div id="pic">
+          <img id="otherpic"class="demo w3-opacity w3-hover-opacity-off otherpic" onclick="currentDiv(1);changeName('沙嗲');" src="飲食習慣/印尼2.jpg">
+        <!-- 圖片三 -->
+        <!-- <p id="txt567">冬蔭功</p> -->
+        <img id="otherpic"class="demo w3-opacity w3-hover-opacity-off otherpic" onclick="currentDiv(2);changeName('沙嗲');" src="飲食習慣/印尼3.jpg">
+        <!-- 圖片四 -->
+        <!-- <p id="txt567">泰式炒河粉</p> -->
+          <img id="otherpic"class="demo w3-opacity w3-hover-opacity-off otherpic" onclick="currentDiv(3);changeName('巴東牛肉');" src="飲食習慣/印尼4.jpg">
+        <!-- 圖片五 -->
+        <!-- <p id="txt567">泰式炒河粉</p> -->
+          <img id="otherpic"class="demo w3-opacity w3-hover-opacity-off otherpic" onclick="currentDiv(4);changeName('巴東牛肉');" src="飲食習慣/印尼5.jpg">
+        </div>
+        </div>
+  </div>
+
+  </div>
+
+  <div id="question" style="height:100vh" class="row">
+        <div class="row">
+          <div class="col-lg-4">
+            <div id="leftline"></div>
+          </div>
+          <div class="col-lg-4">
+            <p id="food_intro">關於印尼，你不可不知的冷知識！</p>
+          </div>
+          <div class="col-lg-4">
+            <div id="rightline"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+          </div>
+          <div id="cold" class="col-lg-6 flex-container">
+            <div id="que">
+              <h3></h3>
+            </div>
+            <div id="option">
+              <button id="A" onclick="checkAns('indo','a')" type="button" class="btn btn-default">A</button>
+              <button id="B" onclick="checkAns('indo','b')" type="button" class="btn btn-default">B</button>
+              <button id="C" onclick="checkAns('indo','c')" type="button" class="btn btn-default">C</button>
+              <button id="D" onclick="checkAns('indo','d')" type="button" class="btn btn-default">D</button>
+            </div>
+            <div id="wrong">
+              <h1>錯！</h1>
+            </div>
+            <div id="content">
+              <h1>對！</h1>
+              <p></p>
+            </div>
+            <div id="next">
+              <button onclick="next('indo')" type="button" class="btn btn-default">下一題</button>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+          </div>
+        </div>
+      </div>
+  </div>
+
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="js/introPage.js"></script>
+<script>
+    getQ("indo", 1);
+  </script>
+
+</body>
+
+
+
+
+
+
+</html>

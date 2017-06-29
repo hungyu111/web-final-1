@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>東南亞美食地圖</title>
+<link rel="stylesheet" href="main_css.css">
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container-fliud" id="wrapper">
+
+  <!-- 導覽列 -->
+  <!-- 導覽列 -->
+  <div id="bar">
+<span  style="top:-50px" class="glyphicon  glyphicon-align-justify" onclick="barShow()"></span>
+    <a href="index.html"><img id="icon" src="img/icon.png"></a>
+
+    <span id="bar1">
+      La Harrison
+    </span>
+      <span id="bar2">
+    <a href="findrest.html">找餐廳</a>
+    </span >
+      <span id="bar3">
+    <a href="http://sasuka9985.pixnet.net/blog/post/216062894">  美食網誌 </a>
+      </span>
+  </div>
+
+    <nav id="barContent">
+
+      <div class="row1">
+        <div class="col-lg-12">
+          <ul>
+            <div class="barContent_Title">探索國家</div>
+            <li><a href="intro_phili.html">菲律賓</a></li>
+            <li><a href="intro_singa.html">新馬地區</a></li>
+            <li><a href="intro_combodia.html">柬埔寨</a></li>
+            <li><a href="intro_vietnam.html">越南</a></li>
+            <li><a href="intro_thai.html">泰國</a></li>
+            <li><a href="intro_laos.html">寮國</a></li>
+            <li><a href="intro_indo.html">印尼</a></li>
+            <li><a href="intro_myanmar.html">緬甸</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-12">
+          <ul>
+            <div class="barContent_Title">找餐廳</div>
+            <li><a href="findRest.html">菲律賓</a></li>
+            <li><a href="findRest.html">新馬地區</a></li>
+            <li><a href="findRest.html">柬埔寨</a></li>
+            <li><a href="findRest.html">越南</a></li>
+            <li><a href="findRest.html">泰國</a></li>
+            <li><a href="findRest.html">寮國</a></li>
+            <li><a href="findRest.html">印尼</a></li>
+            <li><a href="findRest.html">緬甸</a></li>
+          </ul>
+        </div>
+      </div>
+      </ul>
+      <div class="row2">
+        <ul>
+          <div class="col-lg-12">
+            <div class="barContent_Title">特色料理</div>
+          </div>
+          <div class="col-lg-4">
+            <li>菲律賓</li>
+            <li>新馬地區</li>
+            <li>柬埔寨</li>
+            <li>越南</li>
+            <li>泰國</li>
+            <li>寮國</li>
+            <li>印尼</li>
+            <li>緬甸</li>
+          </div>
+          <div class="col-lg-4">
+            <li><a href="feature_phili1.html">菲律賓燒乳豬</a></li>
+            <li><a href="feature_singa1.html">叻沙</a></li>
+            <li><a href="feature_cambodia1.html">AMOK</a></li>
+            <li><a href="feature_vitenam1.html">甘蔗蝦</a></li>
+            <li><a href="feature_thai1.html">冬蔭功</a></li>
+            <li><a href="feature_laos1.html">辣普</a></li>
+            <li><a href="feature_indo1.html">沙嗲</a></li>
+            <li><a href="feature_myanmar1.html">發酵茶葉沙拉</a></li>
+          </div>
+          <div class="col-lg-4">
+            <li><a href="feature_phili2.html">halo-halo</a></li>
+            <li><a href="feature_singa2.html">海南雞飯</a></li>
+            <li><a href="feature_cambodia2.html">聖羅勒紅樹螞蟻牛肉</a></li>
+            <li><a href="feature_vitenam2.html">越式春捲</a></li>
+            <li><a href="feature_thai2.html">泰式炒河粉</a></li>
+            <li><a href="feature_laos2.html">椰奶糯米糕</a></li>
+            <li><a href="feature_indo2.html">巴東牛肉</a></li>
+            <li><a href="feature_myanmar2.html">緬甸咖哩飯</a></li>
+          </div>
+        </ul>
+      </div>
+
+    </nav>
+
+
+<div id="intro_eat">
+  <div style="height:100vh">
+  <div class="row">
+    <div class="col-lg-4">
+      <div id="leftline"></div>
+      </div>
+    <div class="col-lg-4">
+
+      <!-- 食物名稱 -->
+      <p style="font-size:25px" id="food_intro">菲律賓燒乳豬 Lechón </p>
+      </div>
+    <div class="col-lg-4">
+      <div id="rightline"></div>
+      </div>
+  </div>
+  <div id="centerpic">
+
+    <!-- 食物圖片 -->
+  <img id="featfood"src="特色食物/菲律賓燒乳豬.jpg">
+  </div>
+
+   <!-- 食材介紹 -->
+      <div id="featintro">
+        <div style="
+        width:50vw;
+        margin-top:3vh;
+        font-size:15px;
+        ">
+菲律賓燒乳豬（Lechón），是一種源於西班牙的燒烤食物。而這種燒乳豬亦是西班牙系語國家，即西班牙及其前殖民地，如菲律賓、古巴、波多黎各、哥倫比亞、多米尼加共和國等國家的美食。Lechón這個字源於西班牙語的Leche，意思就是「奶」，所以Lechón就是指還在吃奶的乳豬。這種烤豬方式會先把乳豬去內臟，穿以米棒在炭火上烤熟，全豬上桌。不過在拉丁美洲，日常可以吃得到的烤豬已不再用乳豬而轉用中等大小的成豬；只有菲律賓式的燒乳豬，不單依然保留使用乳豬，還會在乳豬抹上一種由雞肝、大蒜、胡椒和醋調製成的醬料，成為了其特色，所以這種烤豬的方式，也被稱為肝醬烤乳豬。
+
+
+      <br>
+      <br>
+      <br>
+      <p style="text-align:center;color:#F55353;font-weight:100;">探索美食背後有哪些特別食材</p>
+      </div>
+    </div>
+    <!-- 側邊直線 -->
+    <p style="float:right;margin-right:7vw;-webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr ">Slide</p>
+    <div style="
+    width:1px;
+    height:11vh;
+    background-color:#F55353;
+    float:right;
+    overflow:hidden;"></div>
+    <!-- 側邊直線 -->
+ </div>
+   <div style="height:100vh">
+     <div class="row">
+
+       </div>
+ 
+       <!-- 食材介紹 -->
+       <div class="element">
+          <div  style="
+          position:relative;
+          top:-60px;
+          font-size:30px;
+          border-left: solid 8px #F55353;
+          text-align:center;
+          ">
+
+          大蒜</div>
+          <div class="line"></div>
+          <p style="
+          width:450px;
+          position:relative;
+          ">大蒜，底下鱗莖味道辣，有刺激性氣味，稱為「蒜頭」，可作調味料，亦可入藥。蒜葉稱為青蒜或蒜苗，花薹稱為蒜薹，均可作蔬菜食用。大蒜是日常生活中不可缺少的調料，在烹調魚、肉、禽類和蔬菜時有去腥增味的作用。
+
+</p>
+          <img id="elementpic"src="特色食物/大蒜.jpg">
+
+       </div>
+       <!-- 食材介紹 -->
+       <!-- 食材介紹 -->
+       <div class="element">
+          <div  style="
+          position:relative;
+          top:-60px;
+          font-size:30px;
+          border-left: solid 8px #F55353;
+          text-align:center;
+          ">
+
+          胡椒</div>
+          <div class="line"></div>
+          <p style="
+          width:450px;
+          position:relative;
+          ">果實在曬乾後通常可作為香料和調味料使用。同樣的果實還是白胡椒、紅胡椒與綠胡椒的製作原料。乾燥的黑胡椒粉是各地的常用香料，自古以來，黑胡椒就因其在調味與醫學上的雙重價值而備受珍視。黑胡椒的香馥來自其含有的胡椒鹼。常簡稱作「胡椒」的黑胡椒粉，是全世界使用最廣泛的香料之一。 
+
+</p>
+          <img id="elementpic"src="特色食物/胡椒.jpg">
+
+       </div>
+       <!-- 食材介紹 -->
+       <!-- 食材介紹 -->
+       <div class="element">
+          <div  style="
+          position:relative;
+          top:-60px;
+          font-size:30px;
+          border-left: solid 8px #F55353;
+          text-align:center;
+          ">
+
+          雞肝</div>
+          <div class="line"></div>
+          <p style="
+          width:450px;
+          position:relative;
+          ">雞肝是雞的肝臟。呈大小雙葉，葉面有苦膽和筋絡(加工時須摘去)。其色紫紅，質細嫩。因其豐富的營養和特殊功效，使得雞肝成為補血養生的最佳食物。
+
+</p>
+          <img id="elementpic"src="特色食物/雞肝.jpg">
+
+       </div>
+       <!-- 食材介紹 -->
+       
+
+           <div  class="row">
+              <a href="findrest.html"><p  class="finaltxt"style="margin-top:10vh;text-align:center;color:#F55353;font-weight:100;">探索在台灣的東南亞料理餐廳</p>
+              <!-- <div class="restruant">
+                <div class="row">
+                <div class="col-lg-3">
+                <div class="restintro">
+           <img  class="restpic" src="feat/resttest.jpg">
+               <div style="padding:10px;padding-top:0px;margin-top:13px;border-left:solid 8px #F55353">
+                 <strong>泰街頭</strong><br>
+                 地址：  台北市大安區溫州街74巷6號1樓
+                <br> 電話： 02 2367 6997
+                <br> 營業時間：<br>週一 ~ 週五　11:30~15:00  17:00-20:00
+                 <br> 週六 ~ 週日  11:30~22:00
+               </div>
+               </div>
+               </div>
+              <div class="col-lg-3">
+               <div class="restintro">
+          <img  class="restpic" src="feat/resttest.jpg">
+                <div style="padding:10px;padding-top:0px;margin-top:13px;border-left:solid 8px #F55353">
+                  <strong>泰街頭</strong><br>
+                  地址：  台北市大安區溫州街74巷6號1樓
+                 <br> 電話： 02 2367 6997
+                 <br> 營業時間：<br>週一 ~ 週五　11:30~15:00  17:00-20:00
+                  <br> 週六 ~ 週日  11:30~22:00
+                </div>
+              </div>
+              </div>
+            <div class="col-lg-3">
+              <div class="restintro">
+         <img  class="restpic" src="feat/resttest.jpg">
+               <div style="padding:10px;padding-top:0px;margin-top:13px;border-left:solid 8px #F55353">
+                 <strong>泰街頭</strong><br>
+                 地址：  台北市大安區溫州街74巷6號1樓
+                <br> 電話： 02 2367 6997
+                <br> 營業時間：<br>週一 ~ 週五　11:30~15:00  17:00-20:00
+                 <br> 週六 ~ 週日  11:30~22:00
+               </div>
+             </div>
+             </div>
+          <div class="col-lg-3">
+             <div class="restintro">
+        <img  class="restpic" src="feat/resttest.jpg">
+              <div style="padding:10px;padding-top:0px;margin-top:13px;border-left:solid 8px #F55353">
+                 <strong>泰街頭</strong><br>
+                 地址：  台北市大安區溫州街74巷6號1樓
+                <br> 電話： 02 2367 6997
+                <br> 營業時間：<br>週一 ~ 週五　11:30~15:00  17:00-20:00
+                 <br> 週六 ~ 週日  11:30~22:00
+              </div>
+            </div>
+            </div>
+
+
+
+           </div>
+         </div> -->
+
+      </div>
+
+
+     </div>
+
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="js/feature.js"></script>
+
+</body>
+
+
+
+
+
+
+</html>

@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>東南亞美食地圖</title>
+<link rel="stylesheet" href="main_css.css">
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container-fliud" id="wrapper">
+
+  <!-- 導覽列 -->
+  <!-- 導覽列 -->
+  <div id="bar">
+<span  style="top:-50px" class="glyphicon  glyphicon-align-justify" onclick="barShow()"></span>
+    <a href="index.html"><img id="icon" src="img/icon.png"></a>
+
+    <span id="bar1">
+      La Harrison
+    </span>
+      <span id="bar2">
+    <a href="findrest.html">找餐廳</a>
+    </span >
+      <span id="bar3">
+    <a href="http://sasuka9985.pixnet.net/blog/post/216062894">  美食網誌 </a>
+      </span>
+  </div>
+
+    <nav id="barContent">
+
+      <div class="row1">
+        <div class="col-lg-12">
+          <ul>
+            <div class="barContent_Title">探索國家</div>
+            <li><a href="intro_phili.html">菲律賓</a></li>
+            <li><a href="intro_singa.html">新馬地區</a></li>
+            <li><a href="intro_combodia.html">柬埔寨</a></li>
+            <li><a href="intro_vietnam.html">越南</a></li>
+            <li><a href="intro_thai.html">泰國</a></li>
+            <li><a href="intro_laos.html">寮國</a></li>
+            <li><a href="intro_indo.html">印尼</a></li>
+            <li><a href="intro_myanmar.html">緬甸</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-12">
+          <ul>
+            <div class="barContent_Title">找餐廳</div>
+            <li><a href="findRest.html">菲律賓</a></li>
+            <li><a href="findRest.html">新馬地區</a></li>
+            <li><a href="findRest.html">柬埔寨</a></li>
+            <li><a href="findRest.html">越南</a></li>
+            <li><a href="findRest.html">泰國</a></li>
+            <li><a href="findRest.html">寮國</a></li>
+            <li><a href="findRest.html">印尼</a></li>
+            <li><a href="findRest.html">緬甸</a></li>
+          </ul>
+        </div>
+      </div>
+      </ul>
+      <div class="row2">
+        <ul>
+          <div class="col-lg-12">
+            <div class="barContent_Title">特色料理</div>
+          </div>
+          <div class="col-lg-4">
+            <li>菲律賓</li>
+            <li>新馬地區</li>
+            <li>柬埔寨</li>
+            <li>越南</li>
+            <li>泰國</li>
+            <li>寮國</li>
+            <li>印尼</li>
+            <li>緬甸</li>
+          </div>
+          <div class="col-lg-4">
+            <li><a href="feature_phili1.html">菲律賓燒乳豬</a></li>
+            <li><a href="feature_singa1.html">叻沙</a></li>
+            <li><a href="feature_cambodia1.html">AMOK</a></li>
+            <li><a href="feature_vitenam1.html">甘蔗蝦</a></li>
+            <li><a href="feature_thai1.html">冬蔭功</a></li>
+            <li><a href="feature_laos1.html">辣普</a></li>
+            <li><a href="feature_indo1.html">沙嗲</a></li>
+            <li><a href="feature_myanmar1.html">發酵茶葉沙拉</a></li>
+          </div>
+          <div class="col-lg-4">
+            <li><a href="feature_phili2.html">halo-halo</a></li>
+            <li><a href="feature_singa2.html">海南雞飯</a></li>
+            <li><a href="feature_cambodia2.html">聖羅勒紅樹螞蟻牛肉</a></li>
+            <li><a href="feature_vitenam2.html">越式春捲</a></li>
+            <li><a href="feature_thai2.html">泰式炒河粉</a></li>
+            <li><a href="feature_laos2.html">椰奶糯米糕</a></li>
+            <li><a href="feature_indo2.html">巴東牛肉</a></li>
+            <li><a href="feature_myanmar2.html">緬甸咖哩飯</a></li>
+          </div>
+        </ul>
+      </div>
+
+    </nav>
+
+
+<div id="intro_eat">
+  <div style="height:100vh">
+  <div class="row">
+    <div class="col-lg-4">
+      <div id="leftline"></div>
+      </div>
+    <div class="col-lg-4">
+
+      <!-- 食物名稱 -->
+      <p style="font-size:25px" id="food_intro">緬甸咖哩飯</p>
+      </div>
+    <div class="col-lg-4">
+      <div id="rightline"></div>
+      </div>
+  </div>
+  <div id="centerpic">
+
+    <!-- 食物圖片 -->
+  <img id="featfood"src="特色食物/緬甸咖哩.jpg">
+  </div>
+
+   <!-- 食材介紹 -->
+      <div id="featintro">
+        <div style="
+        width:50vw;
+        margin-top:3vh;
+        font-size:15px;
+        ">
+如菜名所示，咖喱是最主要的元素。但是在你點了單之後--通常是一盤多肉多油的咖喱飯，周圍有豬肉、魚肉、蝦、牛肉或者羊肉，之後一系列的小菜就會隨之上桌。
+這些包括米飯、餡餅沙拉、一小碟油炸蔬菜、一小碗湯，和一大盤新鮮的半熟蔬菜以及香草，吃的時候配著蘸醬。蘸醬有ngapi ye（一種緬甸當地的蘸醬），一種水分多的魚味醬，還有balachaung,一種辣椒、大蒜和油炸干蝦仁的混合物。
+
+      <br>
+      <br>
+      <br>
+      <p style="text-align:center;color:#F55353;font-weight:100;">探索美食背後有哪些特別食材</p>
+      </div>
+    </div>
+    <!-- 側邊直線 -->
+    <p style="float:right;margin-right:7vw;-webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr ">Slide</p>
+    <div style="
+    width:1px;
+    height:11vh;
+    background-color:#F55353;
+    float:right;
+    overflow:hidden;"></div>
+    <!-- 側邊直線 -->
+ </div>
+   <div style="height:100vh">
+     <div class="row">
+
+       </div>
+ 
+ 
+       <!-- 食材介紹 -->
+       <div class="element">
+          <div  style="
+          position:relative;
+          top:-60px;
+          font-size:30px;
+          border-left: solid 8px #F55353;
+          text-align:center;
+          ">
+
+          大蒜</div>
+          <div class="line"></div>
+          <p style="
+          width:450px;
+          position:relative;
+          ">大蒜，底下鱗莖味道辣，有刺激性氣味，稱為「蒜頭」，可作調味料，亦可入藥。蒜葉稱為青蒜或蒜苗，花薹稱為蒜薹，均可作蔬菜食用。大蒜是日常生活中不可缺少的調料，在烹調魚、肉、禽類和蔬菜時有去腥增味的作用。
+
+</p>
+          <img id="elementpic"src="特色食物/大蒜.jpg">
+
+       </div>
+       <!-- 食材介紹 -->
+       <!-- 食材介紹 -->
+       <div class="element">
+          <div  style="
+          position:relative;
+          top:-60px;
+          font-size:30px;
+          border-left: solid 8px #F55353;
+          text-align:center;
+          ">
+
+          辣椒</div>
+          <div class="line"></div>
+          <p style="
+          width:450px;
+          position:relative;
+          ">東南亞料理的重要香料之一，唐朝藥王孫思邈的《千金要方》中提到「辛主發散、苦主沉降」，意思是辛辣有助於體內熱氣消散，苦味則不適合夏天吃。東南亞不論是春夏秋冬都愛吃辣抗暑。
+
+</p>
+          <img id="elementpic"src="特色食物/辣椒.jpg">
+
+       </div>
+       <!-- 食材介紹 -->
+      
+      
+
+           <div  class="row">
+              <a href="findrest.html"><p  class="finaltxt"style="margin-top:10vh;text-align:center;color:#F55353;font-weight:100;">探索在台灣的東南亞料理餐廳</p>
+              <!-- <div class="restruant">
+                <div class="row">
+                <div class="col-lg-3">
+                <div class="restintro">
+           <img  class="restpic" src="feat/resttest.jpg">
+               <div style="padding:10px;padding-top:0px;margin-top:13px;border-left:solid 8px #F55353">
+                 <strong>泰街頭</strong><br>
+                 地址：  台北市大安區溫州街74巷6號1樓
+                <br> 電話： 02 2367 6997
+                <br> 營業時間：<br>週一 ~ 週五　11:30~15:00  17:00-20:00
+                 <br> 週六 ~ 週日  11:30~22:00
+               </div>
+               </div>
+               </div>
+              <div class="col-lg-3">
+               <div class="restintro">
+          <img  class="restpic" src="feat/resttest.jpg">
+                <div style="padding:10px;padding-top:0px;margin-top:13px;border-left:solid 8px #F55353">
+                  <strong>泰街頭</strong><br>
+                  地址：  台北市大安區溫州街74巷6號1樓
+                 <br> 電話： 02 2367 6997
+                 <br> 營業時間：<br>週一 ~ 週五　11:30~15:00  17:00-20:00
+                  <br> 週六 ~ 週日  11:30~22:00
+                </div>
+              </div>
+              </div>
+            <div class="col-lg-3">
+              <div class="restintro">
+         <img  class="restpic" src="feat/resttest.jpg">
+               <div style="padding:10px;padding-top:0px;margin-top:13px;border-left:solid 8px #F55353">
+                 <strong>泰街頭</strong><br>
+                 地址：  台北市大安區溫州街74巷6號1樓
+                <br> 電話： 02 2367 6997
+                <br> 營業時間：<br>週一 ~ 週五　11:30~15:00  17:00-20:00
+                 <br> 週六 ~ 週日  11:30~22:00
+               </div>
+             </div>
+             </div>
+          <div class="col-lg-3">
+             <div class="restintro">
+        <img  class="restpic" src="feat/resttest.jpg">
+              <div style="padding:10px;padding-top:0px;margin-top:13px;border-left:solid 8px #F55353">
+                 <strong>泰街頭</strong><br>
+                 地址：  台北市大安區溫州街74巷6號1樓
+                <br> 電話： 02 2367 6997
+                <br> 營業時間：<br>週一 ~ 週五　11:30~15:00  17:00-20:00
+                 <br> 週六 ~ 週日  11:30~22:00
+              </div>
+            </div>
+            </div>
+
+
+
+           </div>
+         </div> -->
+
+      </div>
+
+
+     </div>
+
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="js/feature.js"></script>
+
+</body>
+
+
+
+
+
+
+</html>

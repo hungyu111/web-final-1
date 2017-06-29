@@ -1,0 +1,3 @@
+function barShow(){
+  $("#barContent").toggle();
+}
